@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeTaskViewController" customModule="TODOProject" customModuleProvider="target">
+            <connections>
+                <outlet property="tblView" destination="FZ1-oD-9kg" id="Pqh-70-ZC9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Union 5" translatesAutoresizingMaskIntoConstraints="NO" id="2Xo-eN-0VR">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="184"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="184" id="KVV-Ib-cHa"/>
+                        <constraint firstAttribute="width" constant="414" id="V8v-5j-vzM"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vl-HY-djR">
+                    <rect key="frame" x="157" y="159" width="100" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Onn-fK-1RI"/>
+                        <constraint firstAttribute="height" constant="50" id="RZT-NQ-o5E"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FZ1-oD-9kg">
+                    <rect key="frame" x="0.0" y="264" width="414" height="632"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="632" id="We5-h5-Xit"/>
+                        <constraint firstAttribute="width" constant="414" id="hi6-fw-xkg"/>
+                    </constraints>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.97647058823529409" green="0.9882352941176471" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="2Xo-eN-0VR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4Ry-F7-QJY"/>
+                <constraint firstItem="3Vl-HY-djR" firstAttribute="bottom" secondItem="2Xo-eN-0VR" secondAttribute="bottom" constant="25" id="Buh-Au-2b1"/>
+                <constraint firstItem="FZ1-oD-9kg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="E3l-Jb-510"/>
+                <constraint firstItem="2Xo-eN-0VR" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Mk0-bh-oTM"/>
+                <constraint firstItem="2Xo-eN-0VR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UIP-Od-krq"/>
+                <constraint firstAttribute="bottom" secondItem="FZ1-oD-9kg" secondAttribute="bottom" id="Yi7-9D-Uww"/>
+                <constraint firstItem="FZ1-oD-9kg" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="b6h-c1-4Pf"/>
+                <constraint firstItem="FZ1-oD-9kg" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.705357" id="en0-fj-VY0"/>
+                <constraint firstItem="2Xo-eN-0VR" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.205357" id="hL5-bn-VyT"/>
+                <constraint firstItem="3Vl-HY-djR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uIT-7x-Esc"/>
+            </constraints>
+            <point key="canvasLocation" x="-23.188405797101453" y="69.642857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Union 5" width="376" height="471"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
